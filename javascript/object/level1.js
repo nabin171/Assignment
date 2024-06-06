@@ -7,22 +7,22 @@ console.log(car1.model);
 // Expected output:
 // { size: 'large', material: 'cotton', color: 'red' }
 const shirt2 = { size: "large", material: "cotton" };
-shirt2.color="red";
+shirt2.color = "red";
 console.log(shirt2);
 // Q3: Calculate the total price by multiplying the 'quantity' and 'price' properties of the 'product' object.
 // Expected output:
 // 400
 const product3 = { name: "Laptop", quantity: 2, price: 200 };
-product3.quantity=4;
-product3.price=100;
+product3.quantity = 4;
+product3.price = 400;
 console.log(product3);
 // Q4: Update the value of the 'age' property in the 'person' object to 35.
 // Expected output:
 // { name: 'Alice', age: 35, city: 'New York' }
 const person4 = { name: "Alice", age: 30, city: "New York" };
-person4.name='Alice';
+person4.name = "Alice";
 person4.age = 35;
-person4.city = 'New York';
+person4.city = "New York";
 console.log(person4);
 // Q5: Remove the 'price' property from the 'book' object.
 // Expected output:
@@ -47,27 +47,23 @@ console.log(employee6.department);
 // Expected output:
 // { type: 'box', dimensions: { length: 10, width: 8, height: 6 }, size: 'large' }
 const box7 = { type: "box", dimensions: { length: 10, width: 8, height: 6 } };
-box7.dimensions.size="large";
+box7.dimensions.size = "large";
 console.log(box7);
 // Q8: Concatenate the 'firstName' and 'lastName' properties of the 'person' object with a space in between.
 // Expected output:
 // 'John Doe'
 const person8 = { firstName: "John", lastName: "Doe", age: 25 };
-console.log(person8.firstName+' '+person8.lastName);
+console.log(person8.firstName + " " + person8.lastName);
 // Q9: Increment the value of the 'quantity' property in the 'cart' object by 1.
 // Expected output:
 // { item: 'Book', quantity: 3, total: 45 }
 const cart9 = { item: "Book", quantity: 2, total: 30 };
+let price = cart9.total / cart9.quantity;
 cart9.quantity++;
-cart9.total=45;
+cart9.total = price * cart9.quantity;
 console.log(cart9);
 // Q10: Check if the 'price' property in the 'product' object is less than 100.
 // Expected output:
 // false
-const product10 = { name: "Phone", price: 150 };
-if(product10.price){
-    return true;
-}
-else{
-    return false;
-}
+const product10 = { name: "Phone", price: 90 };
+Boolean(product10.price > 100);
