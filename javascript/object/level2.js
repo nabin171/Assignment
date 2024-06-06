@@ -23,11 +23,10 @@ console.log(product3);
 // Expected output:
 // false
 const car4 = { make: "Toyota", year: 2021 };
-if(car4.make&&car4.model&&car4.year){
-    Boolean(true);
-}
-else{
-    Boolean(false);
+if (car4.make && car4.model && car4.year) {
+  Boolean(true);
+} else {
+  Boolean(false);
 }
 
 // Q5: Create a copy of the 'student' object without modifying the original object.
@@ -42,11 +41,11 @@ console.log(cloneStudent5);
 // true
 const user6 = { name: "John", age: 30, address: "123 Main St" };
 
-
-function isString(variable) {
-  return typeof variable === "string";
+if (typeof user6.address === "string") {
+  Boolean(true);
+} else {
+  Boolean(false);
 }
-console.log(isString(user6.address));
 // if (typeof user6.address === 'string'){
 // console.log("true");
 // }
@@ -71,8 +70,8 @@ console.log(propertyNames);
 // Expected output:
 // false
 const book9 = { title: "JavaScript Basics", author: "John Smith", year: 2020 };
-const resultt = Object.entries(book9);
-if(resultt.includes("Null")){
+const resultt = Object.values(book9);
+if(resultt.includes(null)){
     console.log("true")
 }
 else{
@@ -82,4 +81,5 @@ else{
 // Expected output:
 // 'doe John'
 const person10 = { fullName: "John doe" };
-console.log(person10.fullName.split('').reverse().join(''));
+let array = Object.values(person10);
+console.log(array[0].split(" ").reverse(" ").join(" "));
