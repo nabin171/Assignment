@@ -42,11 +42,13 @@ const employee6 = { name: "John", age: 28, department: "HR", salary: 60000 };
 delete employee6.name;
 delete employee6.age;
 delete employee6.salary;
+console.log(employee6.department);
 // Q7: Add a new property 'size' with the value 'large' to the 'box' object.
 // Expected output:
 // { type: 'box', dimensions: { length: 10, width: 8, height: 6 }, size: 'large' }
 const box7 = { type: "box", dimensions: { length: 10, width: 8, height: 6 } };
-box7.size=
+box7.dimensions.size="large";
+console.log(box7);
 // Q8: Concatenate the 'firstName' and 'lastName' properties of the 'person' object with a space in between.
 // Expected output:
 // 'John Doe'
@@ -56,7 +58,7 @@ console.log(person8.firstName+' '+person8.lastName);
 // Expected output:
 // { item: 'Book', quantity: 3, total: 45 }
 const cart9 = { item: "Book", quantity: 2, total: 30 };
-cart9.quantity=3;
+cart9.quantity++;
 cart9.total=45;
 console.log(cart9);
 // Q10: Check if the 'price' property in the 'product' object is less than 100.
