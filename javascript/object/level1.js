@@ -47,9 +47,9 @@ console.log(employee.department);
 
 // Q7: Add a new property 'size' with the value 'large' to the 'box' object.
 // Expected output:
-// { type: 'box', dimensions: { length: 10, width: 8, height: 6, size: 'large' } }
+// { type: 'box', dimensions: { length: 10, width: 8, height: 6 }, size: 'large' }
 const box = { type: "box", dimensions: { length: 10, width: 8, height: 6 } };
-box.dimensions.size = "large";
+box.size = "large";
 console.log(box);
 
 // Q8: Concatenate the 'firstName' and 'lastName' properties of the 'person' object with a space in between.
